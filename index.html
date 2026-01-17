@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LUXWEAR v1</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background: #f8f8f6;
+      color: #111;
+      padding: 40px;
+    }
+    h1 {
+      letter-spacing: 1px;
+    }
+    ul {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>LUXWEAR</h1>
+  <p><strong>Today’s Look — Office</strong></p>
+
+  <ul id="outfit"></ul>
+
+  <script>
+    const todayLook = {
+      outfit: [
+        "White Oxford Shirt",
+        "Navy Tailored Trousers",
+        "Brown Leather Loafers",
+        "Leather Strap Watch",
+      ],
+    };
+
+    const list = document.getElementById("outfit");
+
+    todayLook.outfit.forEach(item => {
+      const li = document.createElement("li");
+      li.textContent = item;
+      list.appendChild(li);
+    });
+  </script>
+
+</body>
+</html>
